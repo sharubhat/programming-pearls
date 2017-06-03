@@ -1,12 +1,18 @@
-package com.cycle.coffee.code.programmingpearls.column1;
+package com.cycle.coffee.code.programmingpearls.column1.lowmemoryfastsort;
 
 import java.util.*;
 
 public class ShuffleArray {
     private static final int SHUFFLE_THRESHOLD        =    5;
 
-    public static Integer[] getShuffledArray(int start, int end) {
-        Integer[] arr = new Integer[end - start];
+    /**
+     * Fastest way to get a shuffled array over a range of integers
+     * @param start
+     * @param end
+     * @return
+     */
+    public static int[] getShuffledArray(int start, int end) {
+        int[] arr = new int[end - start];
         for(int i = 0; i < arr.length; i++) {
             arr[i] = start++;
         }

@@ -1,4 +1,4 @@
-package com.cycle.coffee.code.programmingpearls.column1;
+package com.cycle.coffee.code.programmingpearls.column1.lowmemoryfastsort;
 
 import java.util.*;
 
@@ -36,7 +36,7 @@ public class FastSystemSort {
     private static final int MAX_INT = 10_000_000;
     private static final int MIN_INT = 0;
 
-    public Integer[] sort(Integer[] arr) {
+    public int[] sort(int[] arr) {
         BitSet set = new BitSet();
         for (int i : arr)
             set.set(i);
@@ -50,7 +50,7 @@ public class FastSystemSort {
     }
 
     public static void main(String[] args) {
-        Integer[] arr;
+        int[] arr;
         int i = 0;
         List<Long> list = new ArrayList<>();
         while(i < 25) {
