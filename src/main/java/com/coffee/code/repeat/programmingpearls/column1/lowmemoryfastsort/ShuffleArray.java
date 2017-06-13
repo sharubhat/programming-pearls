@@ -1,28 +1,34 @@
-package com.cycle.coffee.code.programmingpearls.column1.lowmemoryfastsort;
+package com.coffee.code.repeat.programmingpearls.column1.lowmemoryfastsort;
 
 import java.util.*;
 
 public class ShuffleArray {
-    private static final int SHUFFLE_THRESHOLD        =    5;
+    private static final int SHUFFLE_THRESHOLD = 5;
 
     /**
-     * Fastest way to get a shuffled array over a range of integers
+     * Fastest way to get a shuffled array over a range of integers. Also ensures there are no duplicates
      * @param start
      * @param end
      * @return
      */
     public static int[] getShuffledArray(int start, int end) {
         int[] arr = new int[end - start];
+        List<Integer> list = new ArrayList<>(end - start);
         for(int i = 0; i < arr.length; i++) {
-            arr[i] = start++;
+            list.add(start++);
         }
 
-        Collections.shuffle(Arrays.asList(arr));
+        Collections.shuffle(list);
+
+        for(int i = 0; i < arr.length; i++) {
+            arr[i] = list.get(i);
+        }
+
         return arr;
     }
 
     public static void main(String[] args) {
-        getShuffledArray(10, 20);
+        System.out.println(Arrays.toString(getShuffledArray(10, 20)));
     }
 
     // below implementation is from Collections class and it runs in linear time

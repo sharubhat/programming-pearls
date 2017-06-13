@@ -1,7 +1,7 @@
-package com.cycle.coffee.code.programmingpearls.column1.inbuiltsort;
+package com.coffee.code.repeat.programmingpearls.column1.inbuiltsort;
 
-import com.cycle.coffee.code.programmingpearls.column1.lowmemoryfastsort.FastSystemSort;
-import com.cycle.coffee.code.programmingpearls.column1.lowmemoryfastsort.ShuffleArray;
+import com.coffee.code.repeat.programmingpearls.column1.lowmemoryfastsort.FastSystemSort;
+import com.coffee.code.repeat.programmingpearls.column1.lowmemoryfastsort.ShuffleArray;
 
 public class LibrarySort {
     private static final int MAX_INT = 10_000_000;

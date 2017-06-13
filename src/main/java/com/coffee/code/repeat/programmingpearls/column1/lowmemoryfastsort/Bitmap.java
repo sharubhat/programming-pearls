@@ -1,4 +1,4 @@
-package com.cycle.coffee.code.programmingpearls.column1.lowmemoryfastsort;
+package com.coffee.code.repeat.programmingpearls.column1.lowmemoryfastsort;
 
 /**
  * This is a memory optimized representation of integers useful for finding/removing duplicates or sorting.

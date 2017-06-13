@@ -1,4 +1,4 @@
-package com.cycle.coffee.code.programmingpearls.column1.lowmemoryfastsort;
+package com.coffee.code.repeat.programmingpearls.column1.lowmemoryfastsort;
 
 import java.util.*;
 
@@ -55,7 +55,6 @@ public class FastSystemSort {
         List<Long> list = new ArrayList<>();
         while(i < 25) {
             arr = ShuffleArray.getShuffledArray(MIN_INT, MAX_INT);
-            ShuffleArray.getShuffledArray(MIN_INT, MAX_INT);
             FastSystemSort fs = new FastSystemSort();
             long startTime = System.currentTimeMillis();
             fs.sort(arr);
